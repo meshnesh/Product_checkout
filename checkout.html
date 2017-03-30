@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Example</title>
+    <link rel="stylesheet" href="css/foundation.css">
+
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class='wrap' id='wrap'>
+
+
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="navbar-left">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul> <!--end navbar-left -->
+
+                <ul class="navbar-right">
+                    <li><a href="#" id="cartO">
+                        <i class="fa fa-shopping-cart"></i> Cart <span class="badge cart-quantity empty">0</span></a></li>
+                </ul> <!--end navbar-right -->
+            </div> <!--end container -->
+        </nav>
+
+
+        <div  class="shopping-cart" >
+            <div class="shopping-cart-header">
+                <i class="fa fa-shopping-cart cart-icon"></i><span class="badge cart-quantity empty">0</span>
+                <div class="shopping-cart-total">
+                    <div class='finalTotal'>
+                        Total: <span>$0.00</span>
+                    </div>
+
+
+                    <!--<span class="lighter-text finalTotal">Total:</span>-->
+                    <!--<span class="main-color-text">$0.00</span>-->
+                </div>
+            </div> <!--end shopping-cart-header -->
+
+            <ul class="shopping-cart-items cart-items">
+
+                <!--functional total-->
+                <!--<div class='total'>-->
+                    <!--<div class='subtotalTotal'>-->
+                        <!--Subtotal-->
+                        <!--<span>$0.00</span>-->
+                    <!--</div>-->
+                    <!--<div class='taxes'>-->
+                        <!--Tax-->
+                        <!--<span>$0.00</span>-->
+                    <!--</div>-->
+                    <!--<div class='shipping'>-->
+                        <!--Shipping-->
+                        <!--<span>$0.00</span>-->
+                    <!--</div>-->
+                    <!--<div class='finalTotal'>-->
+                        <!--Total-->
+                        <!--<span>$0.00</span>-->
+                    <!--</div>-->
+                    <!--<a class='checkout'>-->
+                        <!--Check Out-->
+                    <!--</a>-->
+
+                <!--</div>-->
+
+            </ul>
+
+            <!--<a href="#" class="button">Checkout</a>-->
+        </div> <!--end shopping-cart -->
+
+        <!--end of styled navigation-->
+
+
+    </header>
+    <section class='shop'></section>
+    <footer>
+        <p>Crafted for the Pattern Rodeo (rodeo-007). Images belong to Github.</p>
+    </footer>
+</div>
+<!-- / Product Templates for Shop & Cart -->
+<script id='productTemplate' type='text/template'>
+    <div class="product">
+        <h1></h1>
+        <p></p>
+        <div class="button">
+            <div class="price"></div>
+            <a class="addtocart">
+                <div class="add">Add to Cart</div>
+                <div class="added">Added!</div>
+            </a>
+        </div>
+    </div>
+</script>
+<script id='cartItem' type='text/template'>
+    <li><div class="cart-product">
+        <input class="quantity" value="1">
+    </div><div class="cart-description">
+        <h3></h3>
+        <span class="subtotal"></span>
+    </div></li>
+</script>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+
+<script src="js/checkout.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
